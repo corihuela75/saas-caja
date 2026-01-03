@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"
+  data-nav-layout="vertical"
+  data-theme-mode="light"
+  data-header-styles="transparent"
+  data-width="fullwidth"
+  data-menu-styles="transparent"
+  data-page-style="flat"
+  data-toggled="close"
+  data-vertical-style="overlay"
+  data-toggled="double-menu-open">
+
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaaS Caja</title>
+
+  <!-- Bootstrap -->
+  <link href="/assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Theme styles -->
+  <link href="/assets/css/styles.css" rel="stylesheet">
+  <link href="/assets/css/icons.css" rel="stylesheet">
+
+  <!-- Extras que usa Vyzor -->
+  <link href="/assets/libs/simplebar/simplebar.min.css" rel="stylesheet">
+  <link href="/assets/libs/node-waves/waves.min.css" rel="stylesheet">
+
+  <%- include('partials/head') %>
+</head>
+
+<body>
+  <div class="progress-top-bar"></div>
+
+  <div class="page">
+    <div class="page-main">
+
+      <%- include('partials/sidebar') %>
+
+      <div class="main-content app-content">
+        <div class="container-fluid">
+
+          <%- body %>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap -->
+  <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Vyzor MAIN JS (EL IMPORTANTE) -->
+  <script src="/assets/js/main.js"></script>
+
+  <%- include('partials/scripts') %>
+</body>
+</html>
